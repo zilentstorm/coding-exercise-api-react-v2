@@ -18,7 +18,15 @@ class PeopleController extends Controller
      */
     public function index()
     {
-        return new PeopleCollection(Person::all());
+        // return new PeopleCollection(Person::all());
+
+        // $people = Person::all();
+        // $people = Person::orderBy('last_name')->get();
+        $people = Person::where('status', 'active')->get();
+    
+        return view ('people', [
+            'people' => $people,
+        ]);
     }
 
     /**
@@ -61,7 +69,8 @@ class PeopleController extends Controller
      */
     public function show($id)
     {
-        return new PersonResource(Person::findOrFail($id));
+        // return new PersonResource(Person::findOrFail($id));
+        return view ('details', ['id' => $id]);
     }
 
     /**

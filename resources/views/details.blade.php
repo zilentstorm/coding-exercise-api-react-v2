@@ -5,15 +5,9 @@
     
     <div class="content">
         <div class="title m-b-md">
-            People List
+            People List - {{ $id }}
         </div>
         
-        @foreach ($people as $person)
-        <div>
-           {{ $person->first_name }} {{ $person->last_name }} - email: {{ $person->email_address }}
-        </div>
-        
-        @endforeach
     </div>
 </div>
 @endsection

@@ -30,7 +30,7 @@ Here’s an example:
 
 ```
 id, first_name, last_name, email_address, status
-1, "Alex", "Ortiz-Rosado", "alex@breezechms.com", active
+1, "Alex", "Ortiz-Rosado", "alex@breezechms.com", "active"
 2, "Jon", "VerLee", "jon@breezechms.com", "archived"
 3, "Fred", "Flintstone", "fredflintstone@example.com", "active"
 4, "Marie", "Bourne", "mbourne@example.com", "active"
@@ -55,7 +55,7 @@ id, group_name
 * MySql 5.x installed locally, accessible via 127.0.0.1
 
 - Clone the repository
-  - `git clone git@github.com:BreezeChMS/coding-exercise-api-react.git && cd coding-exercise-api-react`
+  - `git clone git@github.com:BreezeChMS/coding-exercise-api-react.git && cd coding-exercise-api-react-v2`
 - Setup Laravel
   - `cp .env.example .env`
   - Edit .env with your mysql connection information: the following steps connect to local mysql database using root credentials
